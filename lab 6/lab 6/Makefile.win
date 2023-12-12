@@ -1,0 +1,23 @@
+CC = g++
+CXXF = -std=c++20 -IHeader
+LDF = -L. -lstdc++
+
+all: Exe 
+
+Exe: libapple.a libsnake.a main.o 
+	$(CC) main.o -o Exe $(LDF) -lapple -lsnake
+
+apple.o: Apple.cpp
+	$(CC) -c Apple.cpp $(CXXF)
+
+libapple.a: apple.o
+	ar rvs libapple.a apple.o
+
+snake.o: Snake.cpp
+	$(CC) -c Snake.cpp $(CXXF)
+		
+libsnake.a: snake.o
+	ar rvs libsnake.a snake.o
+
+main.o: main.cpp
+	$(CC) -c main.cpp $(CXXF)

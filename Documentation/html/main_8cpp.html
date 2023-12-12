@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Snake game lab c++: Файл D:/lab c++/Lab 5/Lab 5/main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Snake game lab c++<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Snake game - Выпонлил Бутаков Кирилл DJ2203 2023</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_2b971e5f25a3b5b6cd244af8905841c2.html">Lab 5</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle"><div class="title">Файл main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Основной файл программы.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;conio.h&gt;</code><br />
+<code>#include &lt;windows.h&gt;</code><br />
+<code>#include &lt;ctime&gt;</code><br />
+<code>#include &quot;<a class="el" href="_snake_8h_source.html">Snake.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_apple_8h_source.html">Apple.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a241aeeb764887ae5e3de58b98f04b16d" id="r_a241aeeb764887ae5e3de58b98f04b16d"><td class="memItemLeft" align="right" valign="top"><a id="a241aeeb764887ae5e3de58b98f04b16d" name="a241aeeb764887ae5e3de58b98f04b16d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>WIDTH</b>&#160;&#160;&#160;50</td></tr>
+<tr class="separator:a241aeeb764887ae5e3de58b98f04b16d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed89bd71aee8be823e8a20ec4e093c1e" id="r_aed89bd71aee8be823e8a20ec4e093c1e"><td class="memItemLeft" align="right" valign="top"><a id="aed89bd71aee8be823e8a20ec4e093c1e" name="aed89bd71aee8be823e8a20ec4e093c1e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>HEIGHT</b>&#160;&#160;&#160;25</td></tr>
+<tr class="separator:aed89bd71aee8be823e8a20ec4e093c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a28f144e3ae325aa63fb91a6b75eaba6e" id="r_a28f144e3ae325aa63fb91a6b75eaba6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a28f144e3ae325aa63fb91a6b75eaba6e">board</a> ()</td></tr>
+<tr class="memdesc:a28f144e3ae325aa63fb91a6b75eaba6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция для отображения игровой доски.  <br /></td></tr>
+<tr class="separator:a28f144e3ae325aa63fb91a6b75eaba6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Основная функция игры.  <br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:aed09c81d3c0b0bb201999099e6d4f0dd" id="r_aed09c81d3c0b0bb201999099e6d4f0dd"><td class="memItemLeft" align="right" valign="top"><a id="aed09c81d3c0b0bb201999099e6d4f0dd" name="aed09c81d3c0b0bb201999099e6d4f0dd"></a>
+<a class="el" href="class_snake.html">Snake</a>&#160;</td><td class="memItemRight" valign="bottom"><b>snake</b> ({ WIDTH/2, HEIGHT/2 }, 1)</td></tr>
+<tr class="memdesc:aed09c81d3c0b0bb201999099e6d4f0dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект змеи <br /></td></tr>
+<tr class="separator:aed09c81d3c0b0bb201999099e6d4f0dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a846e5689f2e150ebf47cb12114449bdf" id="r_a846e5689f2e150ebf47cb12114449bdf"><td class="memItemLeft" align="right" valign="top"><a id="a846e5689f2e150ebf47cb12114449bdf" name="a846e5689f2e150ebf47cb12114449bdf"></a>
+<a class="el" href="class_apple.html">Apple</a>&#160;</td><td class="memItemRight" valign="bottom"><b>food</b></td></tr>
+<tr class="memdesc:a846e5689f2e150ebf47cb12114449bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Объект яблока <br /></td></tr>
+<tr class="separator:a846e5689f2e150ebf47cb12114449bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef160b7437d94056f1dc59646cd5b87d" id="r_aef160b7437d94056f1dc59646cd5b87d"><td class="memItemLeft" align="right" valign="top"><a id="aef160b7437d94056f1dc59646cd5b87d" name="aef160b7437d94056f1dc59646cd5b87d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>score</b></td></tr>
+<tr class="memdesc:aef160b7437d94056f1dc59646cd5b87d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Переменная для хранения счета <br /></td></tr>
+<tr class="separator:aef160b7437d94056f1dc59646cd5b87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Основной файл программы. </p>
+<p>Содержит функцию main и основной игровой цикл. <a class="el" href="class_snake.html" title="�����, �������������� ���� � ����.">Snake</a> game - Выпонлил Бутаков Кирилл DJ2203 2023 </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="a28f144e3ae325aa63fb91a6b75eaba6e" name="a28f144e3ae325aa63fb91a6b75eaba6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28f144e3ae325aa63fb91a6b75eaba6e">&#9670;&#160;</a></span>board()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void board </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Функция для отображения игровой доски. </p>
+<p>Текущие позиции змеи и яблока.</p>
+<p>Вектор тела змеи.</p>
+<p>Вывод счета игры.</p>
+<p>Отображение игровой доски в консоли.</p>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Основная функция игры. </p>
+<p>Инициализирует объекты змеи и яблока, запускает основной цикл игры. Обрабатывает ввод пользователя, обновляет состояние игры и отображает доску. Проверяет условия завершения игры.</p>
+<dl class="section return"><dt>Возвращает</dt><dd>Код завершения игры. </dd></dl>
+<p>Счет игры.</p>
+<p>Генерация начального положения яблока.</p>
+<p>Основной цикл игры.</p>
+<p>Отображение игровой доски.</p>
+<p>Обработка ввода пользователя.</p>
+<p>Проверка на столкновение с границами или самой собой.</p>
+<p>Проверка, съела ли змея яблоко.</p>
+<p>Задержка для более плавного отображения.</p>
+<p>Очистка консольного экрана.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
